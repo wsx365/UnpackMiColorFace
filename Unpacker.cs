@@ -36,7 +36,7 @@ namespace UnpackMiColorFace
             if (version == 0)
                 throw new MissingFieldException();
 
-            watchType = WatchDetector.GetWatchType(data, version);
+            watchType = WatchType.MiBand9;
 
             Console.WriteLine($"Watch detected: {watchType}");
 
